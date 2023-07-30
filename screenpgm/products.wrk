@@ -1,0 +1,60 @@
+      *products.wrk is generated from C:\Users\edval\OneDrive\Área de Trabalho\Hello_EIS\products\screen\products.isp
+       77 key-status is special-names crt status pic 9(4) value 0.
+          88 exit-pushed value 27.
+          88 message-received value 95.
+          88 event-occurred value 96.
+          88 screen-no-input-field value 97.
+          88 screen-time-out value 99.
+       77 quit-mode-flag pic s9(5) comp-4 value 0.
+       77 fsTblProduct pic x(2).
+          88 valid-product value is "00" thru "09".
+       77 window-handle handle of window.
+       77 screen-1-st-1-hdl handle of status-bar.
+       77 Arial-Black-8v0 handle of font.
+       77 Arial-Black-20v0 handle of font.
+       77 Bauhaus-93-20v0 handle of font.
+       77 Eras-Bold-ITC-20v0 handle of font.
+       77 Eras-Bold-ITC-24v0 handle of font.
+       77 Arial-12v0 handle of font.
+       77 Arial-18v0 handle of font.
+       77 Arial-18v0-b handle of font.
+       77 Arial-Black-18v0-b handle of font.
+       77 Arial-10v0 handle of font.
+       77 Agency-FB-10v0 handle of font.
+       77 Arial-10v00 handle of font.
+       77 Arial-Black-10v0 handle of font.
+       77 Arial-Narrow-12v0 handle of font.
+       77 Bauhaus-93-12v0 handle of font.
+       77 Arial-12v00 handle of font.
+       77 Arial-10v01 handle of font.
+       77 Arial-Black-12v0 handle of font.
+       77 Arial-Black-8v00 handle of font.
+       77 Arial-10v02 handle of font.
+       77 refrigerator-g2 pic s9(9) comp-4.
+       77 Arial-8v0 handle of font.
+       77 tire-gf01b131ac pic s9(9) comp-4.
+       77 Arial-8v00 handle of font.
+       77 soaps-ge4ea5f0f0 pic s9(9) comp-4.
+       77 keyboard-g1f230 pic s9(9) comp-4.
+       77 tire-gf01b131ac0 pic s9(9) comp-4.
+       77 Arial-8v01 handle of font.
+       77 diskette-png pic s9(9) comp-4.
+       77 delete-png pic s9(9) comp-4.
+       77 toalhas-png pic s9(9) comp-4.
+       77 magnifier-png pic s9(9) comp-4.
+       01 GRIDPROD.
+          03 gridCod pic ZZZZ9.
+          03 gridNam pic x(40).
+          03 gridCat pic x(30).
+          03 gridQtt pic ZZZZ9.
+          03 gridPri pic ZZZ.ZZ9,99.
+          03 gridURL pic x(200).
+          03 gridDes pic x(80).
+       77 toalhas-png0 pic s9(9) comp-4.
+       77 Arial-8v0-b handle of font.
+       77 Arial-8v02 handle of font.
+       77 Arial-8v0-b0 handle of font.
+       77 Arial-10v0-b handle of font.
+       77 Arial-9v0-b handle of font.
+       77 Arial-8v0-b1 handle of font.
+       77 refrigerator-g20 pic s9(9) comp-4.

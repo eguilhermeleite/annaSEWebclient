@@ -1,0 +1,11 @@
+      *product.fd is generated from C:\Users\edval\OneDrive\Área de Trabalho\Hello_EIS\products\fd\product.idl
+       fd product
+          .
+       01 tblProductRec.
+          03 productCode pic ZZZZ9.
+          03 productName pic x(40).
+          03 productCategory pic x(30).
+          03 productQuantity pic ZZZZZ.
+          03 productPrice pic ZZZ.ZZZ,ZZ.
+          03 productURL pic x(200).
+          03 productDescription pic x(80).

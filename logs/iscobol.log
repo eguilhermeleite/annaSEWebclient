@@ -1,0 +1,81 @@
+23 de jun de 2023 16.36.31.942 INFORMA합ES: ISCOBOL isCOBOL-BETA release 2023 R1 build#1090.7-20230309-35864
+23 de jun de 2023 16.36.31.955 INFORMA합ES:  JVM Options=
+      -XX:ErrorFile=../logs/java_error%p.log
+      -Dswing.defaultlaf=com.sun.java.swing.plaf.windows.WindowsLookAndFeel
+23 de jun de 2023 16.36.31.956 INFORMA합ES: [CONFIG] [isCobol] iscobol.key.backspace=termination=77 edit=backspace
+23 de jun de 2023 16.36.31.956 INFORMA합ES: [CONFIG] [isCobol] iscobol.expired=0
+23 de jun de 2023 16.36.31.956 INFORMA합ES: [CONFIG] [user] iscobol.gui.entryfield.implied_decimal=true
+23 de jun de 2023 16.36.31.956 INFORMA합ES: [CONFIG] [isCobol] iscobol.logfile=../logs/iscobol.log
+23 de jun de 2023 16.36.31.956 INFORMA합ES: [CONFIG] [isCobol] iscobol.exception.java=true
+23 de jun de 2023 16.36.31.956 INFORMA합ES: [CONFIG] [isCobol] iscobol.code_prefix=./;C:/MYAPP;D:/CLASSES;D:/CLASSES/myApp.jar;C:/myApp;C:VeryantisCOBOL_SDK2023R1sampleiscontrolset;C:UsersedvalOneDrive�?rea de TrabalhoINC5484
+23 de jun de 2023 16.36.31.956 INFORMA합ES: [CONFIG] [user] iscobol.key.termination=32 
+23 de jun de 2023 16.36.31.956 INFORMA합ES: [CONFIG] [isCobol] iscobol.exception.message=3
+23 de jun de 2023 16.36.31.956 INFORMA합ES: [CONFIG] [user] iscobol.paramweb=teste1234
+23 de jun de 2023 16.36.31.956 INFORMA합ES: [CONFIG] [isCobol] iscobol.gui.ignore_invalid_handle=true
+23 de jun de 2023 16.36.31.956 INFORMA합ES: [CONFIG] [isCobol] iscobol.file.env_naming=1
+23 de jun de 2023 16.36.31.957 INFORMA합ES: [CONFIG] [isCobol] iscobol.file.status=com.iscobol.io.FileStatus85
+23 de jun de 2023 16.36.31.957 INFORMA합ES: [CONFIG] [user] iscobol.key.spaces=termination=32
+23 de jun de 2023 16.36.31.957 INFORMA합ES: [CONFIG] [user] iscobol.webapp_base_url=http://191.252.195.181:8080/isfunctions/
+23 de jun de 2023 16.36.31.957 INFORMA합ES: [CONFIG] [isCobol] iscobol.runtime.cs.version=91
+23 de jun de 2023 16.36.31.957 INFORMA합ES: [CONFIG] [isCobol] iscobol.properties.sources=
+	\etc\iscobol.properties
+	From user home: C:\Users\edval\iscobol.properties
+	From class path: C:/Users/edval/OneDrive/%c3%81rea%20de%20Trabalho/Hello_EIS/products/resources/iscobol.properties
+	From $ISCOBOL: C:\Veryant\isCOBOL_SDK2023R1\iscobol.properties
+23 de jun de 2023 16.36.31.957 INFORMA합ES: [CONFIG] [isCobol] iscobol.gui.justify_num_fields=true
+23 de jun de 2023 16.36.31.957 INFORMA합ES: [CONFIG] [isCobol] iscobol.key.enter=termination=13 edit=next
+23 de jun de 2023 16.36.31.957 INFORMA합ES: [CONFIG] [isCobol] iscobol.encoding=UTF-8
+23 de jun de 2023 16.36.31.957 INFORMA합ES: [CONFIG] [isCobol] iscobol.tracelevel=63
+23 de jun de 2023 16.36.31.958 INFORMA합ES: [CONFIG] [isCobol] iscobol.key.system=1
+23 de jun de 2023 16.36.31.958 INFORMA합ES: [CONFIG] [isCobol] iscobol.runtime.version=isCOBOL-BETA release 2023 R1 build#1090.7-20230309-35864
+23 de jun de 2023 16.36.31.958 INFORMA합ES: [CONFIG] [isCobol] iscobol.print.attribute.font_folder_embed=C:/Fontes
+23 de jun de 2023 16.36.31.958 INFORMA합ES: [CONFIG] [isCobol] iscobol.file.prefix=../data
+23 de jun de 2023 16.36.31.958 INFORMA합ES: [CONFIG] [isCobol] iscobol.io_creates=1
+23 de jun de 2023 16.36.31.958 INFORMA합ES: [CONFIG] [isCobol] iscobol.exception.dump=true
+23 de jun de 2023 16.36.31.959 INFORMA합ES: [CONFIG] [isCobol] iscobol.runtime.decimal_point_is_comma=true
+23 de jun de 2023 16.36.31.959 INFORMA합ES: [CONFIG] [isCobol] iscobol.terminal.cursor_type=3
+23 de jun de 2023 16.36.31.959 INFORMA합ES: [CONFIG] [user] iscobol.foreground_intensity=1
+23 de jun de 2023 16.36.31.959 INFORMA합ES: [CONFIG] [isCobol] iscobol.gui.date_entry.display_format=dd-MM-yyyy
+23 de jun de 2023 16.36.31.959 INFORMA합ES: [CONFIG] [user] iscobol.key.space=termination=32
+23 de jun de 2023 16.36.31.959 INFORMA합ES: [CONFIG] [isCobol] iscobol.terminal.cursor_color=3
+23 de jun de 2023 16.36.31.959 INFORMA합ES: [CONFIG] [user] iscobol.font.small.cell=6,13
+23 de jun de 2023 16.36.31.959 INFORMA합ES: [CONFIG] [isCobol] iscobol.runtime.fs.version=19
+23 de jun de 2023 16.36.31.959 INFORMA합ES: [CONFIG] [isCobol] iscobol.gui.independent.icon=true
+23 de jun de 2023 16.36.31.959 INFORMA합ES: [CONFIG] [user] iscobol.compiler.efd_field_name_num=1
+23 de jun de 2023 16.36.31.962 INFORMA합ES: TRY LOADING:./\PRODUCTS.class
+23 de jun de 2023 16.36.32.125 INFORMA합ES: ENTER PROGRAM 'PRODUCTS' {
+23 de jun de 2023 16.36.32.127 INFORMA합ES: ENTER PARAGRAPH 'MAIN-LOGIC' [PRODUCTS]
+23 de jun de 2023 16.36.32.128 INFORMA합ES: ENTER PARAGRAPH 'IS-INITIAL-ROUTINE' [PRODUCTS]
+23 de jun de 2023 16.36.32.134 INFORMA합ES: ENTER PARAGRAPH 'IS-LOAD-FONTS' [PRODUCTS]
+23 de jun de 2023 16.36.32.270 INFORMA합ES: EXIT PARAGRAPH 'IS-LOAD-FONTS' [PRODUCTS]
+23 de jun de 2023 16.36.32.271 INFORMA합ES: ENTER PARAGRAPH 'IS-LOAD-BITMAPS' [PRODUCTS]
+23 de jun de 2023 16.36.32.307 INFORMA합ES: EXIT PARAGRAPH 'IS-LOAD-BITMAPS' [PRODUCTS]
+23 de jun de 2023 16.36.32.308 INFORMA합ES: ENTER PARAGRAPH 'IS-OPEN-FILES' [PRODUCTS]
+23 de jun de 2023 16.36.32.308 INFORMA합ES: ENTER PARAGRAPH 'IS-PRODUCT-OPEN' [PRODUCTS]
+23 de jun de 2023 16.36.32.308 INFORMA합ES: OPEN:PRODUCT, IO, lock=NONE, AUTOMATIC
+23 de jun de 2023 16.36.32.318 INFORMA합ES: OPENING [../data\tblProduct] AS [class com.iscobol.io.DynamicJIsam]
+23 de jun de 2023 16.36.32.326 INFORMA합ES: OPENED [../data\tblProduct] AS [class com.iscobol.io.DynamicJIsam]
+23 de jun de 2023 16.36.32.326 INFORMA합ES: EXIT PARAGRAPH 'IS-PRODUCT-OPEN' [PRODUCTS]
+23 de jun de 2023 16.36.32.326 INFORMA합ES: EXIT PARAGRAPH 'IS-OPEN-FILES' [PRODUCTS]
+23 de jun de 2023 16.36.32.326 INFORMA합ES: EXIT PARAGRAPH 'IS-INITIAL-ROUTINE' [PRODUCTS]
+23 de jun de 2023 16.36.32.326 INFORMA합ES: ENTER PARAGRAPH 'IS-SCREENPRODUCT-ROUTINE' [PRODUCTS]
+23 de jun de 2023 16.36.32.326 INFORMA합ES: ENTER PARAGRAPH 'IS-SCREENPRODUCT-SCRN' [PRODUCTS]
+23 de jun de 2023 16.36.32.326 INFORMA합ES: ENTER PARAGRAPH 'IS-SCREENPRODUCT-CREATE' [PRODUCTS]
+23 de jun de 2023 16.36.32.483 INFORMA합ES: EXIT PARAGRAPH 'IS-SCREENPRODUCT-CREATE' [PRODUCTS]
+23 de jun de 2023 16.36.32.483 INFORMA합ES: ENTER PARAGRAPH 'IS-SCREENPRODUCT-INIT-DATA' [PRODUCTS]
+23 de jun de 2023 16.36.32.483 INFORMA합ES: ENTER PARAGRAPH 'IS-COMBOCAT-CONTENT' [PRODUCTS]
+23 de jun de 2023 16.36.32.484 INFORMA합ES: EXIT PARAGRAPH 'IS-COMBOCAT-CONTENT' [PRODUCTS]
+23 de jun de 2023 16.36.32.484 INFORMA합ES: ENTER PARAGRAPH 'IS-GRIDPRODUCT-CONTENT' [PRODUCTS]
+23 de jun de 2023 16.36.32.486 INFORMA합ES: EXIT PARAGRAPH 'IS-GRIDPRODUCT-CONTENT' [PRODUCTS]
+23 de jun de 2023 16.36.32.486 INFORMA합ES: ENTER PARAGRAPH 'SCREENPRODUCT-AFT-INIT-DATA' [PRODUCTS]
+23 de jun de 2023 16.36.32.486 INFORMA합ES: START:PRODUCT, type=GREAT, keyNum=0, keyLen=0
+23 de jun de 2023 16.36.32.486 INFORMA합ES: key 1, key-value=    0
+23 de jun de 2023 16.36.32.487 INFORMA합ES: READ NEXT:PRODUCT, lock=1
+23 de jun de 2023 16.36.32.487 INFORMA합ES: READ NEXT:PRODUCT, lock=1
+23 de jun de 2023 16.36.32.488 INFORMA합ES: READ NEXT:PRODUCT, lock=1
+23 de jun de 2023 16.36.32.488 INFORMA합ES: READ NEXT:PRODUCT, lock=1
+23 de jun de 2023 16.36.32.488 INFORMA합ES: end/begin of file PRODUCT (null) FS=[10]: end/begin of file
+23 de jun de 2023 16.36.32.488 INFORMA합ES: EXIT PARAGRAPH 'SCREENPRODUCT-AFT-INIT-DATA' [PRODUCTS]
+23 de jun de 2023 16.36.32.488 INFORMA합ES: EXIT PARAGRAPH 'IS-SCREENPRODUCT-INIT-DATA' [PRODUCTS]
+23 de jun de 2023 16.36.32.488 INFORMA합ES: EXIT PARAGRAPH 'IS-SCREENPRODUCT-SCRN' [PRODUCTS]
+23 de jun de 2023 16.36.32.488 INFORMA합ES: ENTER PARAGRAPH 'IS-SCREENPRODUCT-PROC' [PRODUCTS]

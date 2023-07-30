@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="11.0.17" class="java.beans.XMLDecoder">
+ <object class="com.iscobol.filedesigner.FileDescriptor" id="FileDescriptor0">
+  <void property="accessMode">
+   <object class="com.iscobol.filedesigner.types.AccessMode">
+    <int>3</int>
+   </object>
+  </void>
+  <void property="assignName">
+   <string>&quot;tblProduct&quot;</string>
+  </void>
+  <void property="fileFormat">
+   <object class="com.iscobol.filedesigner.types.FileFormat">
+    <int>4</int>
+   </object>
+  </void>
+  <void property="fileStatusName">
+   <string>fsTblProduct</string>
+  </void>
+  <void id="IOParagraphList0" property="IOParagraphs">
+   <void id="SettingItemArray0" property="settings"/>
+   <void property="settings">
+    <object idref="SettingItemArray0"/>
+   </void>
+  </void>
+  <void id="AssignDevice0" property="assignDevice">
+   <void id="Integer0" property="selection"/>
+  </void>
+  <void property="keys">
+   <void property="settings">
+    <array class="com.iscobol.screenpainter.beans.types.SettingItem" length="1">
+     <void index="0">
+      <object class="com.iscobol.filedesigner.types.Key">
+       <void property="fieldNameList">
+        <string>productCode</string>
+       </void>
+       <void property="name">
+        <string>productPK</string>
+       </void>
+      </object>
+     </void>
+    </array>
+   </void>
+  </void>
+  <void property="lockMode">
+   <object class="com.iscobol.filedesigner.types.LockMode">
+    <int>2</int>
+   </object>
+  </void>
+ </object>
+ <array class="com.iscobol.screenpainter.beans.types.VariableType" length="1">
+  <void index="0">
+   <object class="com.iscobol.screenpainter.beans.types.VariableType">
+    <void property="children">
+     <array class="com.iscobol.screenpainter.beans.types.SettingTreeItem" length="7">
+      <void index="0">
+       <object class="com.iscobol.screenpainter.beans.types.VariableType" id="VariableType0">
+        <void id="SettingTreeItemArray0" property="children"/>
+        <void property="children">
+         <object idref="SettingTreeItemArray0"/>
+        </void>
+        <void property="level">
+         <string>03</string>
+        </void>
+        <void property="name">
+         <string>productCode</string>
+        </void>
+        <void property="picture">
+         <string>ZZZZ9</string>
+        </void>
+       </object>
+      </void>
+      <void index="1">
+       <object class="com.iscobol.screenpainter.beans.types.VariableType" id="VariableType1">
+        <void id="SettingTreeItemArray1" property="children"/>
+        <void property="children">
+         <object idref="SettingTreeItemArray1"/>
+        </void>
+        <void property="level">
+         <string>03</string>
+        </void>
+        <void property="name">
+         <string>productName</string>
+        </void>
+        <void property="picture">
+         <string>x(40)</string>
+        </void>
+       </object>
+      </void>
+      <void index="2">
+       <object class="com.iscobol.screenpainter.beans.types.VariableType" id="VariableType2">
+        <void id="SettingTreeItemArray2" property="children"/>
+        <void property="children">
+         <object idref="SettingTreeItemArray2"/>
+        </void>
+        <void property="level">
+         <string>03</string>
+        </void>
+        <void property="name">
+         <string>productCategory</string>
+        </void>
+        <void property="picture">
+         <string>x(30)</string>
+        </void>
+       </object>
+      </void>
+      <void index="3">
+       <object class="com.iscobol.screenpainter.beans.types.VariableType" id="VariableType3">
+        <void id="SettingTreeItemArray3" property="children"/>
+        <void property="children">
+         <object idref="SettingTreeItemArray3"/>
+        </void>
+        <void property="level">
+         <string>03</string>
+        </void>
+        <void property="name">
+         <string>productQuantity</string>
+        </void>
+        <void property="picture">
+         <string>ZZZZZ</string>
+        </void>
+       </object>
+      </void>
+      <void index="4">
+       <object class="com.iscobol.screenpainter.beans.types.VariableType" id="VariableType4">
+        <void id="SettingTreeItemArray4" property="children"/>
+        <void property="children">
+         <object idref="SettingTreeItemArray4"/>
+        </void>
+        <void property="level">
+         <string>03</string>
+        </void>
+        <void property="name">
+         <string>productPrice</string>
+        </void>
+        <void property="picture">
+         <string>ZZZ.ZZZ,ZZ</string>
+        </void>
+       </object>
+      </void>
+      <void index="5">
+       <object class="com.iscobol.screenpainter.beans.types.VariableType" id="VariableType5">
+        <void id="SettingTreeItemArray5" property="children"/>
+        <void property="children">
+         <object idref="SettingTreeItemArray5"/>
+        </void>
+        <void property="level">
+         <string>03</string>
+        </void>
+        <void property="name">
+         <string>productURL</string>
+        </void>
+        <void property="picture">
+         <string>x(200)</string>
+        </void>
+       </object>
+      </void>
+      <void index="6">
+       <object class="com.iscobol.screenpainter.beans.types.VariableType" id="VariableType6">
+        <void id="SettingTreeItemArray6" property="children"/>
+        <void property="children">
+         <object idref="SettingTreeItemArray6"/>
+        </void>
+        <void property="level">
+         <string>03</string>
+        </void>
+        <void property="name">
+         <string>productDescription</string>
+        </void>
+        <void property="picture">
+         <string>x(80)</string>
+        </void>
+       </object>
+      </void>
+     </array>
+    </void>
+    <void property="name">
+     <string>tblProductRec</string>
+    </void>
+   </object>
+  </void>
+ </array>
+ <object class="com.iscobol.screenpainter.propertysheet.EventParagraphs"/>
+ <object class="java.util.Hashtable">
+  <void method="put">
+   <string>iscobol.release</string>
+   <string>isCOBOL2023R1</string>
+  </void>
+ </object>
+ <object class="com.iscobol.screenpainter.propertysheet.DataDefinition">
+  <string>fd</string>
+ </object>
+</java>

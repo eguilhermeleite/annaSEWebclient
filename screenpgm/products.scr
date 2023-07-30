@@ -1,0 +1,303 @@
+      *products.scr is generated from C:\Users\edval\OneDrive\Área de Trabalho\Hello_EIS\products\screen\products.isp
+       01 screenProduct
+       .
+          03 inputCod Entry-Field
+             line 9,0
+             column 6,3
+             size 8,4 cells 
+             lines 2,5 cells 
+             color 65536
+             background-color rgb x#ffffff
+             font Arial-8v00
+             id 4
+             left
+             numeric
+             max-text 5
+             max-val 99999
+             value productCode
+             border-color rgb x#d2d2d2
+             border-width ( 0 0 1 3 )
+             .
+          03 inputNam Entry-Field
+             line 8,9
+             column 17,2
+             size 25,6 cells 
+             lines 2,5 cells 
+             color 65536
+             background-color rgb x#ffffff
+             font Arial-8v00
+             id 6
+             left
+             upper
+             max-text 30
+             value productName
+             border-color rgb x#d2d2d2
+             border-width ( 0 0 1 3 )
+             .
+          03 comboCat Combo-Box
+             line 8,8
+             column 45,0
+             size 19,5 cells 
+             lines 5,0 cells 
+             font Arial-8v00
+             visible 1
+             enabled 1
+             id 13
+             drop-down
+             value productCategory
+             item-height 2,7
+             .
+          03 inputDes Entry-Field
+             line 15,6
+             column 6,0
+             size 58,5 cells 
+             lines 2,5 cells 
+             color 65536
+             background-color rgb x#ffffff
+             font Arial-8v00
+             id 22
+             left
+             upper
+             max-text 30
+             value productDescription
+             border-color rgb x#d2d2d2
+             border-width ( 0 0 1 3 )
+             .
+          03 inputQtt Entry-Field
+             line 21,9
+             column 6,1
+             size 8,4 cells 
+             lines 2,5 cells 
+             color 65536
+             background-color rgb x#ffffff
+             font Arial-8v00
+             id 11
+             left
+             numeric
+             max-text 5
+             max-val 99999
+             value productQuantity
+             border-color rgb x#d2d2d2
+             border-width ( 0 0 1 3 )
+             .
+          03 inputPri Entry-Field
+             line 21,9
+             column 17,0
+             size 9,3 cells 
+             lines 2,5 cells 
+             color 65536
+             background-color rgb x#ffffff
+             font Arial-8v00
+             id 9
+             left
+             numeric
+             max-text 8
+             value productPrice
+             border-color rgb x#d2d2d2
+             border-width ( 0 0 1 3 )
+             .
+          03 inputURL Entry-Field
+             line 21,8
+             column 28,8
+             size 35,7 cells 
+             lines 2,5 cells 
+             color 65536
+             background-color rgb x#ffffff
+             font Arial-8v00
+             id 16
+             left
+             lower
+             max-text 200
+             value productURL
+             border-color rgb x#d2d2d2
+             border-width ( 0 0 1 3 )
+             .
+          03 screen-1-bi-1 Bitmap
+             line 11,4
+             column 74,0
+             size 334 pixels 
+             lines 440 pixels 
+             id 1
+             bitmap-scale 2
+             bitmap-handle refrigerator-g20
+             bitmap-number 1
+             .
+          03 screen-1-la-1 Label
+             line 3,6
+             column 82,9
+             size 29,0 cells 
+             lines 4,7 cells 
+             background-color rgb x#ffffff foreground-color rgb x#8080ff
+             font Eras-Bold-ITC-24v0
+             id 2
+             transparent
+             title "INTERON"
+             .
+          03 screen-1-la-2 Label
+             line 6,1
+             column 90,7
+             size 13,1 cells 
+             lines 4,4 cells 
+             font Arial-Black-18v0-b
+             id 3
+             transparent
+             title "Store"
+             .
+          03 screen-1-la-codigo Label
+             line 6,8
+             column 6,3
+             size 8,4 cells 
+             lines 3,0 cells 
+             background-color rgb x#ffffff foreground-color rgb x#464646
+             font Arial-Black-8v00
+             id 5
+             transparent
+             title "Código"
+             .
+          03 screen-1-la-nome Label
+             line 6,7
+             column 17,3
+             size 8,4 cells 
+             lines 2,6 cells 
+             background-color rgb x#ffffff foreground-color rgb x#464646
+             font Arial-Black-8v00
+             id 7
+             transparent
+             title "Nome"
+             .
+          03 screen-1-fr-1 Frame
+             line 1,2
+             column 4,4
+             size 63,3 cells 
+             lines 31,5 cells 
+             background-color rgb x#ffffff foreground-color rgb x#464646
+             background-color rgb x#d2d2d2
+             font Arial-Black-12v0
+             id 8
+             engraved
+             transparent
+             title "Cadastro de produtos"
+             gradient-orientation 2
+             .
+          03 btnSave Push-Button
+             exception-value 1001
+             line 27,7
+             column 24,9
+             size 98
+             lines 20
+             id 17
+             title "SALVAR"
+             bitmap-handle diskette-png
+             square
+             title-position 2
+             .
+          03 btnSearch Push-Button
+             exception-value 1000
+             line 27,7
+             column 39,1
+             size 98
+             lines 20
+             id 20
+             title "PESQUISAR"
+             bitmap-handle magnifier-png
+             square
+             left
+             title-position 2
+             .
+          03 btnDelete Push-Button
+             line 27,7
+             column 53,3
+             size 98
+             lines 20
+             id 18
+             title "APAGAR"
+             bitmap-handle delete-png
+             square
+             title-position 2
+             .
+          03 screen-1-la-3 Label
+             line 19,8
+             column 17,0
+             size 8,4 cells 
+             lines 2,7 cells 
+             background-color rgb x#ffffff foreground-color rgb x#464646
+             font Arial-Black-8v00
+             id 10
+             transparent
+             title "Preço"
+             .
+          03 screen-1-la-4 Label
+             line 19,9
+             column 6,0
+             size 11,3 cells 
+             lines 2,6 cells 
+             background-color rgb x#ffffff foreground-color rgb x#464646
+             font Arial-Black-8v00
+             id 12
+             transparent
+             title "Quantidade"
+             .
+          03 screen-1-la-5 Label
+             line 6,7
+             column 45,0
+             size 11,3 cells 
+             lines 3,0 cells 
+             background-color rgb x#ffffff foreground-color rgb x#464646
+             font Arial-Black-8v00
+             id 14
+             transparent
+             title "Categoria"
+             .
+          03 screen-1-la-6 Label
+             line 19,8
+             column 28,8
+             size 27,4 cells 
+             lines 2,6 cells 
+             background-color rgb x#ffffff foreground-color rgb x#464646
+             font Arial-Black-8v00
+             id 15
+             transparent
+             title "URL da Imagem"
+             .
+          03 gridProduct Grid
+             line 32,6
+             column 4,4
+             size 63,3 cells 
+             lines 18,0 cells 
+             font Arial-8v02
+             id 19
+             event procedure gridProduct-evt-proc
+             no-box
+             centered-headings
+             column-headings
+             vpadding 80
+             drag-background-color rgb x#d2d2d2 drag-foreground-color 
+             rgb x#000000
+             drag-background-color rgb x#c0c0c0
+             drag-foreground-color rgb x#000000
+             heading-background-color rgb x#ffffd2 
+             heading-foreground-color rgb x#464646
+             heading-font Arial-8v0-b1
+             cursor-frame-width 3
+             protection 1
+             num-rows 12
+             rows-per-page 12
+             .
+          03 screen-1-br-1 Bar
+             line 10,2
+             column 83,1
+             size 12,2 cells 
+             background-color rgb x#ffffff foreground-color rgb x#8080ff
+             id 21
+             .
+          03 screenProduct-la-1 Label
+             line 13,4
+             column 6,0
+             size 11,3 cells 
+             lines 2,6 cells 
+             background-color rgb x#ffffff foreground-color rgb x#464646
+             font Arial-Black-8v00
+             id 23
+             transparent
+             title "Descrição"
+             .

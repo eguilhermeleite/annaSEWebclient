@@ -1,0 +1,246 @@
+      *products.prd is generated from C:\Users\edval\OneDrive\Área de Trabalho\Hello_EIS\products\screen\products.isp
+       is-initial-routine.
+           accept system-information from system-info.
+           accept terminal-abilities from terminal-info.
+           perform is-load-fonts.
+           perform is-load-bitmaps.
+           perform is-open-files.
+       is-load-fonts.
+           initialize wfont-data arial-8v00.
+           move 8 to wfont-size.
+           move "Arial" to wfont-name.
+           set wfont-bold to false.
+           set wfont-italic to false.
+           set wfont-underline to false.
+           set wfont-strikeout to false.
+           set wfont-fixed-pitch to false.
+           call "w$font" using wfont-get-font arial-8v00 wfont-data.
+           move arial-8v00 to arial-8v02.
+           initialize wfont-data arial-8v0-b1.
+           move 8 to wfont-size.
+           move "Arial" to wfont-name.
+           set wfont-bold to true.
+           set wfont-italic to false.
+           set wfont-underline to false.
+           set wfont-strikeout to false.
+           set wfont-fixed-pitch to false.
+           call "w$font" using wfont-get-font arial-8v0-b1 wfont-data.
+           initialize wfont-data arial-10v0-b.
+           move 10 to wfont-size.
+           move "Arial" to wfont-name.
+           set wfont-bold to true.
+           set wfont-italic to false.
+           set wfont-underline to false.
+           set wfont-strikeout to false.
+           set wfont-fixed-pitch to false.
+           call "w$font" using wfont-get-font arial-10v0-b wfont-data.
+           initialize wfont-data arial-black-8v00.
+           move 8 to wfont-size.
+           move "Arial Black" to wfont-name.
+           set wfont-bold to false.
+           set wfont-italic to false.
+           set wfont-underline to false.
+           set wfont-strikeout to false.
+           set wfont-fixed-pitch to false.
+           call "w$font" using wfont-get-font arial-black-8v00 
+           wfont-data.
+           initialize wfont-data arial-black-12v0.
+           move 12 to wfont-size.
+           move "Arial Black" to wfont-name.
+           set wfont-bold to false.
+           set wfont-italic to false.
+           set wfont-underline to false.
+           set wfont-strikeout to false.
+           set wfont-fixed-pitch to false.
+           call "w$font" using wfont-get-font arial-black-12v0 
+           wfont-data.
+           initialize wfont-data arial-black-18v0-b.
+           move 18 to wfont-size.
+           move "Arial Black" to wfont-name.
+           set wfont-bold to true.
+           set wfont-italic to false.
+           set wfont-underline to false.
+           set wfont-strikeout to false.
+           set wfont-fixed-pitch to false.
+           call "w$font" using wfont-get-font arial-black-18v0-b 
+           wfont-data.
+           initialize wfont-data eras-bold-itc-24v0.
+           move 24 to wfont-size.
+           move "Eras Bold ITC" to wfont-name.
+           set wfont-bold to false.
+           set wfont-italic to false.
+           set wfont-underline to false.
+           set wfont-strikeout to false.
+           set wfont-fixed-pitch to false.
+           call "w$font" using wfont-get-font eras-bold-itc-24v0 
+           wfont-data.
+       is-load-bitmaps.
+           call "w$bitmap" using wbitmap-load "delete.png" giving 
+           delete-png.
+           call "w$bitmap" using wbitmap-load "diskette.png" giving 
+           diskette-png.
+           call "w$bitmap" using wbitmap-load "magnifier.png" giving 
+           magnifier-png.
+           call "w$bitmap" using wbitmap-load "refrigerator-g2d8c3c157_6
+      -    "40.png" giving refrigerator-g20.
+       is-exit-rtn.
+           perform is-close-files.
+           perform is-destroy-fonts.
+           perform is-destroy-bitmaps.
+           exit program.
+           stop run.
+       is-destroy-fonts.
+           destroy arial-8v00.
+           destroy arial-8v02.
+           destroy arial-8v0-b1.
+           destroy arial-10v0-b.
+           destroy arial-black-8v00.
+           destroy arial-black-12v0.
+           destroy arial-black-18v0-b.
+           destroy eras-bold-itc-24v0.
+       is-destroy-bitmaps.
+           call "w$bitmap" using wbitmap-destroy delete-png.
+           call "w$bitmap" using wbitmap-destroy diskette-png.
+           call "w$bitmap" using wbitmap-destroy magnifier-png.
+           call "w$bitmap" using wbitmap-destroy refrigerator-g20.
+       is-open-files.
+           perform is-product-open.
+       is-product-open.
+           open i-o product
+           if fsTblProduct = "35"
+              open output product
+              if fsTblProduct(1:1) = "0"
+                 close product
+                 open i-o product
+              end-if
+           end-if
+           if not fsTblProduct(1:1) = "0"
+              perform is-extended-file-status
+              perform is-exit-rtn
+           end-if.
+       is-close-files.
+           close product.
+       is-dataset-product-read.
+           read product with no lock.
+       is-dataset-product-read-next.
+           read product next with no lock.
+       is-dataset-product-delete.
+           delete file product.
+       is-screenProduct-routine.
+           perform is-screenProduct-scrn
+           perform is-screenProduct-proc.
+       is-screenProduct-scrn.
+           perform is-screenProduct-create
+           perform is-screenProduct-init-data.
+       is-screenProduct-create.
+           display standard window background-low
+              screen line 41
+              screen column 91
+              size 110,2
+              lines 52,0
+              cell width 10
+              cell height 10
+              label-offset 20
+              color 257
+              background-color rgb x#ffffff
+              modeless
+              title-bar
+              no wrap
+              title "INTERON Store"
+              gradient-orientation 3
+              gradient-color-1 rgb x#c8c8c8
+              gradient-color-2 rgb x#ffffff
+              handle window-handle
+           .
+           display status-bar
+              font Default-Font
+              color 257
+              id 2
+              handle screen-1-st-1-hdl
+           .
+
+           display screenProduct.
+       is-screenProduct-init-data.
+           perform is-comboCat-content.
+           perform is-gridProduct-content.
+           perform screenProduct-aft-init-data.
+       is-comboCat-content.
+           modify comboCat
+              item-to-add "INFORMÁTICA"
+              item-to-add "CAMA, MESA E BANHO"
+              item-to-add "ELETRODOMÉSTICO"
+              item-to-add "AUTOMOTIVO"
+           .
+       is-gridProduct-content.
+           modify gridProduct
+              column-dividers ( 1 1 1 1 1 1 )
+              data-columns ( record-position of gridCod record-position 
+              of gridNam record-position of gridCat record-position of 
+              gridQtt record-position of gridPri record-position of 
+              gridDes )
+              display-columns ( 1 10 40 55 64 76 )
+              separation ( 5 5 5 5 5 5 )
+              alignment ( "C" "C" "C" "C" "C" "C" )
+              data-types ( "X" "X" "X" "X" "X" "X" )
+           .
+           modify gridProduct
+              row-background-color-pattern rgb 16777215 
+              row-foreground-color-pattern rgb 0
+              row-background-color-pattern rgb 15790320 
+              row-foreground-color-pattern rgb 0
+           .
+           modify gridProduct x = 1, y = 1
+              cell-font Arial-10v0-b
+              cell-data "Código"
+           .
+           modify gridProduct x = 2, y = 1
+              cell-font Arial-10v0-b
+              cell-data "Nome"
+           .
+           modify gridProduct x = 3, y = 1
+              cell-font Arial-10v0-b
+              cell-data "Categoria"
+           .
+           modify gridProduct x = 4, y = 1
+              cell-font Arial-10v0-b
+              cell-data "Qtd."
+           .
+           modify gridProduct x = 5, y = 1
+              cell-font Arial-10v0-b
+              cell-data "Preço"
+           .
+           modify gridProduct x = 6, y = 1
+              cell-font Arial-10v0-b
+              cell-data "Descrição"
+           .
+       is-screenProduct-display-status-msg.
+           modify screen-1-st-1-hdl
+              font Default-Font
+              color 257
+           .
+       is-screenProduct-clear-status-msg.
+           perform is-screenProduct-display-status-msg.
+       is-screenProduct-proc.
+           perform until exit-pushed
+              accept screenProduct on exception 
+                 perform is-screenProduct-evaluate-func
+              end-accept
+           end-perform.
+           destroy window-handle.
+           initialize key-status.
+       is-screenProduct-evaluate-func.
+           evaluate true
+           when exit-pushed
+              perform is-screenProduct-exit
+           when event-occurred
+              if event-type = msg-close
+                 perform is-screenProduct-exit
+              end-if
+           when key-status = 1001
+              perform btnSave-link-to
+           when key-status = 1000
+              perform btnSearch-link-to
+           end-evaluate.
+           move 4 to accept-control.
+       is-screenProduct-exit.
+           set exit-pushed to true.

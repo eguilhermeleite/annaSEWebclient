@@ -1,0 +1,63 @@
+      *products.evt is generated from C:\Users\edval\OneDrive\Área de Trabalho\Hello_EIS\products\screen\products.isp
+       gridProduct-evt-proc.
+           evaluate event-type
+           when msg-goto-cell
+              perform gridProduct-evt-msg-goto-cell
+           when other
+           end-evaluate
+           .
+      *start event editor code
+
+      *pesquisar
+       btnSearch-link-to.
+           inquire gridProduct   ID  IN  control-id.
+           move    4 to  accept-control.
+           call    "w$keybuf"    using   1,  "{^F}". 
+           .
+      *salvar
+       btnSave-link-to.
+           inquire inputCod value productCode 
+           inquire inputNam value productName 
+           inquire inputDes value productDescription 
+           inquire inputPri value productPrice 
+           inquire inputQtt value productQuantity 
+           inquire inputURL value productURL 
+           write tblProductRec
+           perform clearFields
+           .
+      *limpar
+       clearFields.
+           initialize tblProductRec 
+           display screenProduct  
+           display message box "Cadastro realizado com sucesso!"
+           before time 300
+           perform screenProduct-aft-init-data
+           inquire inputCod ID IN control-id 
+           move 4 to accept-control
+           .
+      *monta o grid     
+       screenProduct-aft-init-data.
+           modify gridProduct RESET-GRID 2
+           initialize tblProductRec
+             start     product      key > productPK  
+             perform   until not     valid-product 
+             
+               read      product             next not at end        
+                 move    productCode         to  gridCod
+                 move    productName         to  gridNam
+                 move    productCategory     to  gridCat 
+                 move    productPrice        to  gridPri
+                 move    productQuantity     to  gridQtt
+                 move    productDescription  to  gridDes
+                 modify  gridProduct         record-to-add GRIDPROD
+               end-read
+               
+             end-perform
+           .
+       gridProduct-evt-msg-goto-cell.
+           call "w$bitmap" using wbitmap-load "toalhas.png" 
+           giving toalhas-png.
+           
+           modify screen-1-bi-1 BITMAP-WIDTH toalhas-png 
+           .
+      *end event editor code
